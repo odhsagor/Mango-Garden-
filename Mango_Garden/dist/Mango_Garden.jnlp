@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Mango_Garden.jnlp">
+  <information>
+    <title>Mango_Garden</title>
+    <vendor>MSI</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Mango_Garden.jar" size="11615" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="mango_garden.Mango_Garden"  name="Mango_Garden" />
+  <update check="always"/>
+</jnlp>
