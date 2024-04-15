@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SupplyChainManager_Sagor.ShippingCapabilitiesController">
+   <children>
+      <AnchorPane layoutX="8.0" layoutY="7.0" prefHeight="56.0" prefWidth="585.0">
+         <children>
+            <Button layoutX="477.0" layoutY="14.0" mnemonicParsing="false" onAction="#scBackOnClick" text="Back" />
+            <Text layoutX="181.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shipping Capabilities">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <MenuBar fx:id="scmenubarfxid" layoutX="9.0" layoutY="63.0" prefHeight="28.0" prefWidth="585.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="All Segment">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Langra" />
+              <MenuItem mnemonicParsing="false" text="Fazli" />
+                  <MenuItem mnemonicParsing="false" text="Himsagar" />
+                  <MenuItem mnemonicParsing="false" text="Khirsapat" />
+                  <MenuItem mnemonicParsing="false" text="Gopalbhog" />
+                  <MenuItem mnemonicParsing="false" text="Amrapali" />
+                  <MenuItem mnemonicParsing="false" text="Ashwina" />
+                  <MenuItem mnemonicParsing="false" text="Bombai" />
+                  <MenuItem mnemonicParsing="false" text="Haribhanga" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Company">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Pran Foods Ltd." />
+                  <MenuItem mnemonicParsing="false" text="ACI Agribusiness" />
+                  <MenuItem mnemonicParsing="false" text="Akij Food &amp; Beverage Ltd" />
+                  <MenuItem mnemonicParsing="false" text="Partex Beverage" />
+                  <MenuItem mnemonicParsing="false" text="Globe Soft Drinks Ltd" />
+                  <MenuItem mnemonicParsing="false" text="Suncrest Limited" />
+                  <MenuItem mnemonicParsing="false" text="Starship Group" />
+                  <MenuItem mnemonicParsing="false" text="Meghna Group of Industries" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Time Period">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Add " />
+            <Menu mnemonicParsing="false" text="Delete" />
+        </menus>
+      </MenuBar>
+      <Text layoutX="70.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Mango">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="scTotalMangofxid" layoutX="45.0" layoutY="164.0" prefHeight="153.0" prefWidth="156.0" />
+      <Text layoutX="231.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Responses">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="scTotalResfxid" layoutX="222.0" layoutY="164.0" prefHeight="153.0" prefWidth="156.0" />
+      <Text layoutX="435.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dismissed">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="scDesmissedfxid" layoutX="402.0" layoutY="164.0" prefHeight="153.0" prefWidth="156.0" />
+   </children>
+</AnchorPane>

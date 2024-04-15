@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SupplyChainManager_Sagor.Purchasing_DashboardController">
+   <children>
+      <Label layoutX="129.0" layoutY="111.0" />
+      <TextField fx:id="orderIDPurfxid" layoutX="129.0" layoutY="98.0" />
+      <Text layoutX="63.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="searchPurfxid" layoutX="299.0" layoutY="98.0" mnemonicParsing="false" onAction="#searchorderIDPurOnClick" text="Search" />
+      <AnchorPane layoutX="9.0" layoutY="9.0" prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="backPurfxid" layoutX="541.0" layoutY="12.0" mnemonicParsing="false" onAction="#backPuronClick" text="Back" />
+            <Text layoutX="238.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchasing">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="namePurfxid" layoutX="139.0" layoutY="169.0" />
+      <TextField fx:id="quantityPurfxid" layoutX="424.0" layoutY="169.0" />
+      <TextField fx:id="shipToPurfxid" layoutX="139.0" layoutY="231.0" />
+      <Text layoutX="349.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="paymentdatePurfxid" layoutX="424.0" layoutY="231.0" />
+      <Text layoutX="316.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Date:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="78.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="65.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ship To:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="totalamountPurfxid" layoutX="139.0" layoutY="285.0" />
+      <Text layoutX="27.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Line endX="445.0" layoutX="164.0" layoutY="137.0" startX="-164.0" />
+   </children>
+</AnchorPane>

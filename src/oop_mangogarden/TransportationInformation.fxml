@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop_mangogarden.TransportationInformationController">
+   <children>
+      <Label layoutX="270.0" layoutY="14.0" text="Transportation Information">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="698.0" layoutY="44.0" mnemonicParsing="false" onAction="#backOnclick" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #1E90ff;" text="Back" />
+      <Label layoutX="62.0" layoutY="104.0" text="Driver Name:" />
+      <TextField fx:id="drivernameTextfield" layoutX="177.0" layoutY="99.0" />
+      <Label layoutX="62.0" layoutY="149.0" text="Product ID:" />
+      <TextField fx:id="productidTextfield" layoutX="177.0" layoutY="144.0" />
+      <Label layoutX="62.0" layoutY="197.0" text="Dispatch Date:" />
+      <TextField fx:id="dispatchdateTextfield" layoutX="177.0" layoutY="192.0" />
+      <Label layoutX="431.0" layoutY="103.0" text="Chassis No:" />
+      <TextField fx:id="chassisnoTextfield" layoutX="582.0" layoutY="99.0" />
+      <Label layoutX="431.0" layoutY="148.0" text=" Plate No:" />
+      <TextField fx:id="platenoTextfield" layoutX="582.0" layoutY="144.0" />
+      <Label layoutX="431.0" layoutY="196.0" text="Destination:" />
+      <TextField fx:id="destinationTextfield" layoutX="582.0" layoutY="191.0" />
+      <TableView fx:id="tableview" layoutX="62.0" layoutY="321.0" prefHeight="200.0" prefWidth="708.0">
+        <columns>
+          <TableColumn fx:id="productidColumn" prefWidth="99.0" text="Product ID" />
+          <TableColumn fx:id="drivernameColumn" prefWidth="129.0" text="Driver Name" />
+            <TableColumn fx:id="dispatchdateColumn" prefWidth="109.0" text="Dispatch Date" />
+            <TableColumn fx:id="chassisnoOnclick" prefWidth="111.0" text="Chassis No" />
+            <TableColumn fx:id="platenoOnclick" prefWidth="94.0" text="Plate No" />
+            <TableColumn fx:id="destinationOnclick" prefWidth="165.0" text="Destination" />
+        </columns>
+      </TableView>
+      <Button layoutX="486.0" layoutY="250.0" mnemonicParsing="false" onAction="#confirminfoOnclick" prefHeight="31.0" prefWidth="212.0" text="Confirm Information" />
+      <Button layoutX="99.0" layoutY="250.0" mnemonicParsing="false" onAction="#showallinfoOnclick" prefHeight="31.0" prefWidth="212.0" text="Show All Information" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SupplyChainManager_Sagor.ReportingAndAnalytics_DeshboardController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="50.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="BackRaaFfxid" layoutX="541.0" layoutY="12.0" mnemonicParsing="false" onAction="#BackRaaOnAction" onDragDetected="#Raa" text="Back" />
+                  <Text layoutX="149.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reporting And Analytics">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tabelviewTmfxid" layoutX="-1.0" layoutY="141.0" prefHeight="181.0" prefWidth="600.0">
+               <columns>
+                  <TableColumn fx:id="Raaorderididfxid1" prefWidth="111.0" text="Order ID" />
+                  <TableColumn fx:id="RaaPurposefxid" prefWidth="117.0" text="Purpose" />
+                  <TableColumn fx:id="RaaTasksfxid" prefWidth="90.0" text="Tasks" />
+                  <TableColumn fx:id="RaaResultsfxid" prefWidth="100.0" text="Results" />
+                  <TableColumn fx:id="Raavaluedtfxid" prefWidth="90.0" text="Value" />
+                  <TableColumn fx:id="RaaAmountfxid1" prefWidth="98.0" text="Amount" />
+               </columns>
+            </TableView>
+            <TextField fx:id="customerRAFfxid" layoutX="117.0" layoutY="96.0" />
+            <Text layoutX="27.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Id: ">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Button layoutX="291.0" layoutY="95.0" mnemonicParsing="false" onAction="#RaaSearchOnClick" text="Search" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

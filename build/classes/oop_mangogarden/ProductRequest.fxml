@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="621.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop_mangogarden.ProductRequestController">
+   <children>
+      <Label layoutX="311.0" layoutY="14.0" text="Product Request ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="670.0" layoutY="50.0" mnemonicParsing="false" onAction="#backOnclick" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: #1e90ff;" text="Back" />
+      <Label layoutX="72.0" layoutY="115.0" text="Employee ID:" />
+      <TextField fx:id="employeeidTextfield" layoutX="190.0" layoutY="110.0" />
+      <Label layoutX="72.0" layoutY="162.0" text="Contact Number:" />
+      <TextField fx:id="contactTextfield" layoutX="190.0" layoutY="157.0" />
+      <TableView fx:id="tableview" layoutX="71.0" layoutY="323.0" prefHeight="200.0" prefWidth="667.0">
+        <columns>
+          <TableColumn fx:id="employeeidColumn" prefWidth="125.0" text="Employee ID" />
+          <TableColumn fx:id="contactColumn" prefWidth="135.0" text="Contact" />
+            <TableColumn fx:id="productidColumn" prefWidth="155.0" text="Product ID" />
+            <TableColumn fx:id="quantityColumn" prefWidth="113.0" text="Quantity/kg" />
+            <TableColumn fx:id="dateColumn" prefWidth="138.0" text="Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="72.0" layoutY="209.0" text="Product ID:" />
+      <TextField fx:id="productidTextfield" layoutX="190.0" layoutY="204.0" />
+      <Label layoutX="463.0" layoutY="115.0" text="Quantity/kg:" />
+      <TextField fx:id="quantityTextfield" layoutX="552.0" layoutY="110.0" />
+      <Label layoutX="463.0" layoutY="162.0" text="Date:" />
+      <TextField fx:id="dateTextfield" layoutX="552.0" layoutY="157.0" />
+      <Button layoutX="465.0" layoutY="204.0" mnemonicParsing="false" onAction="#confiemOnclick" prefHeight="31.0" prefWidth="275.0" text="Confirm" />
+      <Button layoutX="72.0" layoutY="267.0" mnemonicParsing="false" onAction="#showproductsOnclick" prefHeight="31.0" prefWidth="275.0" text="Show Products" />
+      <Button layoutX="626.0" layoutY="548.0" mnemonicParsing="false" onAction="#sendOnclick" prefHeight="31.0" prefWidth="114.0" text="Send" />
+   </children>
+</AnchorPane>

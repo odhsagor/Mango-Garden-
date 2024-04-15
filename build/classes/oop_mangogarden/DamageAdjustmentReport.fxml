@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="374.0" prefWidth="953.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop_mangogarden.DamageAdjustmentReportController">
+   <children>
+      <Label layoutX="323.0" layoutY="14.0" text="Damage Adjustment Report">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="840.0" layoutY="50.0" mnemonicParsing="false" onAction="#backOnclick" prefHeight="31.0" prefWidth="64.0" style="-fx-background-color: #1E90ff;" text="Back" />
+      <Button layoutX="51.0" layoutY="76.0" mnemonicParsing="false" onAction="#showreportOnclick" text="Show Adjustment Report" />
+      <TableView fx:id="tableview" layoutX="51.0" layoutY="130.0" prefHeight="200.0" prefWidth="853.0">
+        <columns>
+          <TableColumn fx:id="drivernameColumn" prefWidth="111.0" text="Driver Name" />
+          <TableColumn fx:id="platenoColumn" prefWidth="78.0" text="Plate No" />
+            <TableColumn fx:id="dateColumn" prefWidth="78.0" text="Date" />
+            <TableColumn fx:id="destinationColumn" prefWidth="114.0" text="Destination" />
+            <TableColumn fx:id="productidColumn" prefWidth="117.0" text="Product ID" />
+            <TableColumn fx:id="quantityColumn" prefWidth="95.0" text="Quantity/kg" />
+            <TableColumn fx:id="damagequantityColumn" prefWidth="131.0" text="Damage Quantity" />
+            <TableColumn fx:id="adjustmentCOlumn" prefWidth="137.0" text="Adjustment" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

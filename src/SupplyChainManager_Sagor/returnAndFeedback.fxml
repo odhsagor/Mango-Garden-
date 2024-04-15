@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="SupplyChainManager_Sagor.ReturnAndFeedbackController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="60.0" prefWidth="575.0">
+         <children>
+            <Text layoutX="193.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return And Feedback">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Button layoutX="492.0" layoutY="17.0" mnemonicParsing="false" onAction="#rafBackOnClick" text="Back" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="411.0" layoutY="104.0" mnemonicParsing="false" onAction="#rafSearchOnClick" text="Search" />
+      <TextField fx:id="rafNamefxid" layoutX="51.0" layoutY="105.0" />
+      <TextField fx:id="rafOrderidfxid" layoutX="231.0" layoutY="104.0" />
+      <Text layoutX="102.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="276.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Line endX="441.807861328125" layoutX="143.0" layoutY="146.0" startX="-126.56578826904297" />
+      <TableView layoutX="16.0" layoutY="160.0" prefHeight="217.0" prefWidth="571.0">
+        <columns>
+          <TableColumn fx:id="rafTableOrderIDfxid" prefWidth="106.32393264770508" text="Order ID" />
+          <TableColumn fx:id="rafReturnItemfxid" prefWidth="152.48585510253906" text="Return Item" />
+            <TableColumn fx:id="rafFeedbackfxid" prefWidth="186.5141143798828" text="Feedback/Why" />
+            <TableColumn fx:id="rafAmountReturnfxid" prefWidth="126.23251342773438" text="Amount Return" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

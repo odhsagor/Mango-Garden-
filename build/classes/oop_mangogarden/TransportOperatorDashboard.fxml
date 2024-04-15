@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop_mangogarden.TransportOperatorDashboardController">
+   <children>
+      <Label layoutX="180.0" layoutY="14.0" text="Transport Operator">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="498.0" layoutY="330.0" mnemonicParsing="false" onAction="#logoutOnclick" text="Logout" />
+      <Button layoutX="47.0" layoutY="79.0" mnemonicParsing="false" onAction="#productinfoOnclick" text="Transportable Product Info" />
+      <Button layoutX="277.0" layoutY="79.0" mnemonicParsing="false" onAction="#purchaseorderOnclick" text="Purchase Order" />
+      <Button layoutX="437.0" layoutY="79.0" mnemonicParsing="false" onAction="#issuePurchaseOnclick" text="Issue Purchase" />
+      <Button layoutX="47.0" layoutY="137.0" mnemonicParsing="false" onAction="#productrequestOnclick" text="Product Request" />
+      <Button layoutX="223.0" layoutY="137.0" mnemonicParsing="false" onAction="#supplierinfoOnclick" text="Supplier Info" />
+      <Button layoutX="362.0" layoutY="137.0" mnemonicParsing="false" onAction="#transportationOnclcik" text="Transportation Info" />
+      <Button layoutX="47.0" layoutY="200.0" mnemonicParsing="false" onAction="#damagereportOnclick" text="Damage Adjustment Report" />
+      <Button layoutX="359.0" layoutY="200.0" mnemonicParsing="false" onAction="#damageadjustmentOnclick" text="Damage Adjustment" />
+      <Button layoutX="47.0" layoutY="260.0" mnemonicParsing="false" onAction="#moneyreceiptOnclick" text="Money Receipt" />
+   </children>
+</AnchorPane>

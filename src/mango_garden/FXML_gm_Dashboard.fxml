@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mango_garden.FXML_gm_DashboardController">
+   <children>
+      <Label layoutX="254.0" layoutY="22.0" prefHeight="38.0" prefWidth="121.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="68.0" layoutY="94.0" mnemonicParsing="false" onAction="#GoToGardenAnalysis" text="Garden Analysis" />
+      <Button layoutX="454.0" layoutY="144.0" mnemonicParsing="false" onAction="#GoToCustomerReview" text="Customer Review" />
+      <Button layoutX="68.0" layoutY="144.0" mnemonicParsing="false" onAction="#GoToViewOrder" text="View Order" />
+      <Button layoutX="179.0" layoutY="144.0" mnemonicParsing="false" onAction="#GoToProductInformation" text="Product Information" />
+      <Button layoutX="353.0" layoutY="144.0" mnemonicParsing="false" onAction="#GoToTrackOrder" text="Track Order" />
+      <Button layoutX="179.0" layoutY="94.0" mnemonicParsing="false" onAction="#GoToInternalCommunicatio" text="Internal Communication" />
+      <Button layoutX="351.0" layoutY="94.0" mnemonicParsing="false" onAction="#GoToStuffRecord" text="Stuff Record" />
+      <Button layoutX="465.0" layoutY="92.0" mnemonicParsing="false" onAction="#GoToOfferUpdate" text="Offer Update" />
+      <Button layoutX="480.0" layoutY="326.0" mnemonicParsing="false" onAction="#GoToLogInPage" text="LogOut" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CSE213_FinalProject_Group56_MangoGarden.jnlp">
+  <information>
+    <title>CSE213_FinalProject_Group56_MangoGarden</title>
+    <vendor>User-pc</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CSE213_FinalProject_Group56_MangoGarden.jar" size="185846" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="cse213_finalproject_group56_mangogarden.CSE213_FinalProject_Group56_MangoGarden"  name="CSE213_FinalProject_Group56_MangoGarden" />
+  <update check="always"/>
+</jnlp>

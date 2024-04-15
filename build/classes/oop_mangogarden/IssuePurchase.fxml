@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="326.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop_mangogarden.IssuePurchaseController">
+   <children>
+      <Label layoutX="337.0" layoutY="14.0" text="Issue Purchase">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="654.0" layoutY="50.0" mnemonicParsing="false" onAction="#backOnclick" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #1E90ff;" text="Back" />
+      <Label layoutX="64.0" layoutY="179.0" text="Product Name:" />
+      <TextField fx:id="productnameTaxtfield" layoutX="186.0" layoutY="174.0" />
+      <Label layoutX="64.0" layoutY="225.0" text="Quantity/kg:" />
+      <TextField fx:id="quantityTextfield" layoutX="186.0" layoutY="220.0" />
+      <Label layoutX="418.0" layoutY="131.0" text="Issue Date:" />
+      <TextField fx:id="issuedateTextfield" layoutX="540.0" layoutY="126.0" />
+      <Button layoutX="420.0" layoutY="220.0" mnemonicParsing="false" onAction="#confiemOnclick" prefHeight="31.0" prefWidth="306.0" text="Confirm" />
+      <Label layoutX="417.0" layoutY="178.0" text="Price:" />
+      <TextField fx:id="priceTextfield" layoutX="539.0" layoutY="173.0" />
+      <Label layoutX="64.0" layoutY="131.0" text="Purchase  ID:" />
+      <TextField fx:id="purchaseidTextfield" layoutX="186.0" layoutY="126.0" />
+   </children>
+</AnchorPane>
