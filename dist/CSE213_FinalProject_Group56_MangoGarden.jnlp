@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="CSE213_FinalProject_Group56_MangoGarden.jar" size="185846" download="eager" />
+    <jar href="CSE213_FinalProject_Group56_MangoGarden.jar" size="195848" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="cse213_finalproject_group56_mangogarden.CSE213_FinalProject_Group56_MangoGarden"  name="CSE213_FinalProject_Group56_MangoGarden" />
   <update check="always"/>

@@ -7,14 +7,32 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="horticulturist_Sagor.GardenOverviewController">
    <children>
-      <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="65.0" prefWidth="585.0">
+      <AnchorPane id="AnchorPane" layoutX="1.0" prefHeight="400.0" prefWidth="600.0">
          <children>
-            <Text layoutX="198.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Garden Overview">
+            <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="70.0" prefWidth="603.0" style="-fx-background-color: red;">
+               <children>
+                  <Text fontSmoothingType="LCD" layoutX="207.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GARDEN Overview">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="544.0" layoutY="16.0" mnemonicParsing="false" onAction="#agBackOnClick" text="Back" />
+               </children>
+            </AnchorPane>
+            <Text layoutX="51.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eco-Luxe Living Amid Mango Trees: A Farm House Getaway">
                <font>
-                  <Font name="System Bold" size="26.0" />
+                  <Font name="System Bold Italic" size="21.0" />
                </font>
             </Text>
-            <Button layoutX="505.0" layoutY="20.0" mnemonicParsing="false" onAction="#goBackOnClick" text="Back" />
+            <AnchorPane layoutX="114.0" layoutY="118.0" prefHeight="142.0" prefWidth="373.0" style="-fx-background-color: Green;">
+               <children>
+                  <Text fill="WHITE" layoutX="15.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Getfarms offers unique rural mango farmhouses, an escape from city life. Experience tranquility, fresh produce, and nature connection. Our farmhouses, which are tucked away among luscious mango gardens, provide a tranquil retreat from the bustle of city lifGetfarms offers unique rural mango farmhouses, an escape from city life. Experience tranquility, fresh produce, and nature connection. Our farmhouses, which are tucked away among luscious mango gardens, provide a tranquil retreat from the bustle of city life." wrappingWidth="387.4881896972656" />
+               </children>
+            </AnchorPane>
+            <Text layoutX="93.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.  Rural allure and unspoiled beauty" />
+            <Text layoutX="336.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Tranquil retreat from city hustle" />
+            <Text layoutX="93.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.  Access to farm-fresh produce" />
+            <Text layoutX="336.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Fusion of rural authenticity and modern comfort" wrappingWidth="197.677734375" />
          </children>
       </AnchorPane>
    </children>
