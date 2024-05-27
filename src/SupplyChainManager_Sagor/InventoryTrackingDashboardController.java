@@ -34,42 +34,42 @@ import javafx.stage.Stage;
 public class InventoryTrackingDashboardController implements Initializable {
 
     @FXML
-    private TableView<orderManagementBin> ItTablefxid;
+    private TableView<orderManagement> ItTablefxid;
     @FXML
-    private TableColumn<orderManagementBin, String> datefxid;
+    private TableColumn<orderManagement, String> datefxid;
     @FXML
     private Button BackItfxid;
     @FXML
-    private TableColumn<orderManagementBin, String> customerNamefxid;
+    private TableColumn<orderManagement, String> customerNamefxid;
     @FXML
-    private TableColumn<orderManagementBin, String> productNamefxid;
+    private TableColumn<orderManagement, String> productNamefxid;
     @FXML
-    private TableColumn<orderManagementBin, String> quantityfxid;
+    private TableColumn<orderManagement, String> quantityfxid;
     @FXML
-    private TableColumn<orderManagementBin, String> amountfxid;
+    private TableColumn<orderManagement, String> amountfxid;
 
-    ArrayList<orderManagementBin> orderManagementList;
-    ObservableList<orderManagementBin> tempList = FXCollections.observableArrayList();
+    ArrayList<orderManagement> orderManagementList;
+    ObservableList<orderManagement> tempList = FXCollections.observableArrayList();
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        orderManagementList = new ArrayList <orderManagementBin>();
+        orderManagementList = new ArrayList <orderManagement>();
         
-        datefxid.setCellValueFactory(new PropertyValueFactory<orderManagementBin,String>("Date"));
-        customerNamefxid.setCellValueFactory(new PropertyValueFactory<orderManagementBin,String>("CoustomerName"));
-        productNamefxid.setCellValueFactory(new PropertyValueFactory<orderManagementBin,String>("product"));
-        quantityfxid.setCellValueFactory(new PropertyValueFactory<orderManagementBin,String>("quantity"));
-        amountfxid.setCellValueFactory(new PropertyValueFactory<orderManagementBin,String>("Amount"));
+        datefxid.setCellValueFactory(new PropertyValueFactory<orderManagement,String>("Date"));
+        customerNamefxid.setCellValueFactory(new PropertyValueFactory<orderManagement,String>("CoustomerName"));
+        productNamefxid.setCellValueFactory(new PropertyValueFactory<orderManagement,String>("product"));
+        quantityfxid.setCellValueFactory(new PropertyValueFactory<orderManagement,String>("quantity"));
+        amountfxid.setCellValueFactory(new PropertyValueFactory<orderManagement,String>("Amount"));
         
     }    
     private void loadOrderManagementFile(){
         ObjectInputStream ois = null;
         try{
-            orderManagementBin i;
+            orderManagement i;
             ois = new ObjectInputStream(new FileInputStream("Order.bin"));
             while(true){
                 try {
-                    orderManagementBin ms = (orderManagementBin) ois.readObject();
+                    orderManagement ms = (orderManagement) ois.readObject();
                     tempList.add(ms);
                 } catch (EOFException e) {
                     break;
@@ -77,11 +77,11 @@ public class InventoryTrackingDashboardController implements Initializable {
                     System.err.println("Class not Found");
                 }
             }
-            for(orderManagementBin y : tempList){
+            for(orderManagement y : tempList){
                  ItTablefxid.getItems().add(y);
              }
         }
-        catch(Exception e){
+        catch(IOException e){
             try{
                 if(ois != null)
                     ois.close();
@@ -113,14 +113,14 @@ public class InventoryTrackingDashboardController implements Initializable {
     private void itShowOnClick(ActionEvent event) {
                 ObjectInputStream ois = null;
         try{
-            orderManagementBin i;
+            orderManagement i;
             ois = new ObjectInputStream(new FileInputStream("Order.bin"));
             while(true){
-                i = (orderManagementBin) ois.readObject();
+                i = (orderManagement) ois.readObject();
                 ItTablefxid.getItems().add(i);
             }
         }
-        catch(Exception e){
+        catch(  IOException | ClassNotFoundException e){
             try{
                 if(ois != null)
                     ois.close();

@@ -90,7 +90,7 @@ public class OrderManagementController implements Initializable {
                 oos = new ObjectOutputStream(fos);
             }
 
-            orderManagementBin d = new orderManagementBin(customerNamefxid.getText(), quantityfxid.getValue(),
+            orderManagement d = new orderManagement(customerNamefxid.getText(), quantityfxid.getValue(),
                     productfxid.getValue(), Amountfxid.getText(), datetextfxid.getText());
 
             oos.writeObject(d);

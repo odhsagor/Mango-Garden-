@@ -10,14 +10,16 @@ import java.io.Serializable;
  *
  * @author md.obidulhuqsagor
  */
-    public class orderManagementBin implements Serializable{
+    public class orderManagement implements Serializable{
+
+    private static final long serialVersionUID = 1L;
     private String CoustomerName;
     private String quantity;
     private String product;
     private String Amount;
     private String date;
 
-    public orderManagementBin(String CoustomerName, String quantity, String product, String Amount, String date) {
+    public orderManagement(String CoustomerName, String quantity, String product, String Amount, String date) {
         this.CoustomerName = CoustomerName;
         this.quantity = quantity;
         this.product = product;
@@ -67,7 +69,7 @@ import java.io.Serializable;
 
     @Override
     public String toString() {
-        return "orderManagementBin{" + "CoustomerName=" + CoustomerName + ", quantity=" + quantity + ", product=" + product + ", Amount=" + Amount + ", date=" + date + '}';
+        return "orderManagement{" + "CoustomerName=" + CoustomerName + ", quantity=" + quantity + ", product=" + product + ", Amount=" + Amount + ", date=" + date + '}';
     }
     
 

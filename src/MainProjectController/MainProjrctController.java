@@ -1,5 +1,5 @@
 
-package cse213_finalproject_group56_mangogarden;
+package MainProjectController;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 
-public class CSE213_FinalProject_Group56_MangoGarden extends Application {
+public class MainProjrctController extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
